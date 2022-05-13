@@ -1,0 +1,22 @@
+{
+		"patientName": "pasien a",
+        "doctorName": "dr tes",
+        "permId": "123123123",
+        "date": "20220509", 
+        "speciality": "dokter gigi",
+        "birthDate": "19900101", 
+        "gender" : "Pria",
+        "age": 25,
+        "plan": [
+            {
+                "id": 123123,
+                "name": "ACTIFED PLUS EXPECTORANT SIRUP 60 ML TABLET 10 MG No.4",
+                "freq": 3,
+                "freqDay": 1,
+                "useRule": "S 3 DD 1",
+                "total": "1",
+                "count": 1,
+				"howToEat": "Sesudah Makan"
+            }
+        ]
+}
