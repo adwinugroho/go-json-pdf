@@ -69,11 +69,11 @@ SUVORK5CYII=">
     {% elif gender|floatformat: 0 == 2 %}
     <p style="top:1000pt;left:56pt;"><b><span>Jenis Kelamin:</span></b><span> Perempuan</span></p>
     {% endif %}
-    <img style="top:56pt;left:56pt;width:200px;height:57px" src="carevo.png">
-    <p style="top:110pt;left:56pt;"><span>{{ date }}</span></p>
-    <p style="top:74pt;left:391pt;"><b><span style="font-size:14pt;">{{ doctorName }}</span></b></p>
-    <p style="top:96pt;left:391pt;"><span>Spesialisasi: {{ speciality }}</span></p>
-    <p style="top:110pt;left:391pt;"><span>No. SIP: {{ permId }}</span></p>
+    <img style="top:35pt;left:56pt;width:120px;height:120px" src="logopartner.png">
+    <p style="top:125pt;left:58pt;"><span>{{ date }}</span></p>
+    <p style="top: 74pt; position: relative; font-size:14pt;text-align: right; color: rgb(38, 77, 121);"><b>{{ doctorName }}</b></p>
+    <p style="top: 90pt;position: relative; text-align: right;">Spesialisasi: {{ speciality }}</p>
+    <p style="top: 100pt;position: relative; text-align: right;">No. SIP: {{ permId }}</p>
     <hr style="position:absolute;top:160pt;width:100%;color:gray;background-color:gray">
     <hr style="position:absolute;top:950pt;width:100%;color:gray;background-color:gray">
     <p style= "top:183pt;left:215pt;"><b><span style="font-size:18pt;">Digital Prescription</span></b></p>
@@ -83,12 +83,12 @@ SUVORK5CYII=">
         <p style="position: relative;"><b><span>R/ {{item.name}}</span></b></p>
         <p style="position: relative;"><span>{{item.useRule}}</span></p>
         {% if item.howToEat|floatformat: 0 == 1 %}
-        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - Sebelum Makan</span></b>
+        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - SEBELUM MAKAN</span></b>
         </p>
         {% elif item.howToEat|floatformat: 0 == 2 %}
-        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - Saat Makan</span></b></p>
+        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - SAAT MAKAN</span></b></p>
         {% elif item.howToEat|floatformat: 0 == 3 %}
-        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - Sesudah Makan</span></b>
+        <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - SESUDAH MAKAN</span></b>
         </p>
         {% else %}
         <p style="position: relative; margin-left: 30px;"><b><span>{{ item.freq|floatformat: 0 }} X {{ item.freqDay|floatformat: 0 }} HARI - </span></b></p>
